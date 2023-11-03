@@ -179,22 +179,22 @@ class Tracks:
 
     # Gibt die Radar_Reflect Streifen an, die beim jeweiligen Track betroffen sind.
     track_hit_t = [
-                    [0, 1],         #  1. Track
-                    [2, 3],         #  2. Track
-                    [4, 5],         #  3. Track
-                    [0],            #  4. Track
-                    [1],            #  5. Track
-                    [0],            #  6. Track
-                    [0],            #  7. Track
-                    [0],            #  8. Track
-                    [0],            #  9. Track
-                    [0],            # 10. Track
-                    [0],            # 11. Track
-                    [0],            # 12. Track
-                    [0],            # 13. Track
-                    [0],            # 14. Track
-                    [0],            # 15. Track
-                    [0]             # 16. Track
+                    [0, 1],         #  0 ->  1. Track
+                    [2, 3],         #  1 ->  2. Track
+                    [4, 5],         #  2 ->  3. Track
+                    [0],            #  3 ->  4. Track
+                    [1],            #  4 ->  5. Track
+                    [0],            #  5 ->  6. Track
+                    [0],            #  6 ->  7. Track
+                    [0],            #  7 ->  8. Track
+                    [0],            #  8 ->  9. Track
+                    [0],            #  9 -> 10. Track
+                    [0],            # 10 -> 11. Track
+                    [0],            # 11 -> 12. Track
+                    [0],            # 12 -> 13. Track
+                    [0],            # 13 -> 14. Track
+                    [0],            # 14 -> 15. Track
+                    [0]             # 15 -> 16. Track
     ]
 
 
