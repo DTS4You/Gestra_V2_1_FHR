@@ -35,9 +35,9 @@ def main_loop():
 
     print("Main Loop")
 
-    rows = len(hit_array)
+    rows = len(defaults.Tracks.track_hit_t)
     print(rows)
-    for elements in hit_array[4]:
+    for elements in defaults.Tracks.track_hit_t[4]:
         print(elements)
 
     print("Main End")
