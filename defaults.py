@@ -140,6 +140,7 @@ class Tracks:
                         False,      # 13    -> 14.
                         True,       # 14    -> 15.
                         False]      # 15    -> 16.
+
     # Gibt die Y-Position (hinten-vorne) an, auf den der Radar-Strahls die Bahn treffen könnte
     track_hit_y     = [  0,         # 0     ->  1.      -> Einspeisung 1
                          1,         # 1     ->  2.
@@ -157,6 +158,7 @@ class Tracks:
                          1,         # 13    -> 14.
                          2,         # 14    -> 15.      -> Einspeisung 8
                          3]         # 15    -> 16.
+
     # Gibt die Höhe an, auf der der Rader-Strahl die Bahn treffen könnte
     track_hit_z     = [ 22,         # 0     ->  1.
                         22,         # 1     ->  2.
@@ -174,6 +176,26 @@ class Tracks:
                         44,         # 13    -> 14.
                         44,         # 14    -> 15.
                         44]         # 15    -> 16.
+
+    # Gibt die Radar_Reflect Streifen an, die beim jeweiligen Track betroffen sind.
+    track_hit_t = [
+                    [0, 1],         #  1. Track
+                    [2, 3],         #  2. Track
+                    [4, 5],         #  3. Track
+                    [0],            #  4. Track
+                    [1],            #  5. Track
+                    [0],            #  6. Track
+                    [0],            #  7. Track
+                    [0],            #  8. Track
+                    [0],            #  9. Track
+                    [0],            # 10. Track
+                    [0],            # 11. Track
+                    [0],            # 12. Track
+                    [0],            # 13. Track
+                    [0],            # 14. Track
+                    [0],            # 15. Track
+                    [0]             # 16. Track
+    ]
 
 
 class Colors:
