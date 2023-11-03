@@ -105,6 +105,7 @@ def draw_targets():
             # print("Target -> ", targets[i].track_num, targets[i].position)
             if targets[i].position == defaults.Radar_Beams.target_hit_x:
                 # print("Treffer")
+                print(targets[i].track_num)
                 draw_reflect()
             else:
                 ddbs_default_all()
@@ -113,8 +114,8 @@ def draw_targets():
     ws2812_show_all()
 
 
-def draw_reflect():
-    for pos in range(50):
+def draw_reflect():                     # Radar-Reflection
+    for pos in range(50):               # Radar-Reflect-Positionen -> 50 Steps max.
         for i in range(16):
             if radar_reflects[i].num_pix > pos:
                 ddb_reflect_set_pixel(i, pos, defaults.Colors.radar_receive)
