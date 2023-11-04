@@ -104,7 +104,7 @@ def draw_targets():
         if targets[i].activ_flag:
             # print("Target -> ", targets[i].track_num, targets[i].position)
             if targets[i].position == defaults.Radar_Beams.target_hit_x:
-                # print("Treffer")
+                print("Treffer -> ")
                 print(targets[i].track_num)
                 draw_reflect()
             else:
@@ -117,7 +117,7 @@ def draw_targets():
 def draw_reflect():                     # Radar-Reflection
     for pos in range(50):               # Radar-Reflect-Positionen -> 50 Steps max.
         for i in range(16):
-            if i == 14 or i == 15:
+            if True:
                 if radar_reflects[i].num_pix > pos:
                     ddb_reflect_set_pixel(i, pos, defaults.Colors.radar_receive)
                     if pos > 0:
