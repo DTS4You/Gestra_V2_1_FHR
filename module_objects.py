@@ -79,6 +79,7 @@ class State_Machine():
         self.step_target_flag = False
         self.max_target_flag = False
         self.radar_end_flag = False
+        generate_targets()
 
 
 def check_max_targets():
