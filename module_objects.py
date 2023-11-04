@@ -116,6 +116,7 @@ def draw_targets():
 
 def draw_reflect(hit_track):            # Radar-Reflection
     print("Treffer -> " + str(hit_track))
+    print(defaults.Tracks.track_hit_t[hit_track])
     for pos in range(50):               # Radar-Reflect-Positionen -> 50 Steps max.
         for i in range(16):
             if True:

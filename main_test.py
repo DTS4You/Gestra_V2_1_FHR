@@ -40,11 +40,12 @@ def main_loop():
 
     i = 0
 
-    while i < 100:
-        set_pixel_ws2812(0, 0, my_color.start)
-        time.sleep(loop_time)
-        i += 1
+    row = defaults.Tracks.track_hit_t[0]
 
+    print(row)
+
+    for i in row:
+        print(i)
 
 # =============================================================================
 if __name__ == '__main__':
