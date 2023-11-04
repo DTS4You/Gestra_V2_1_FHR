@@ -115,15 +115,15 @@ def draw_targets():
 
 
 def draw_reflect(hit_track):            # Radar-Reflection
-    print("Treffer -> " + str(hit_track))
-    print(defaults.Tracks.track_hit_t[hit_track])
+    # print("Treffer -> " + str(hit_track))
+    # print(defaults.Tracks.track_hit_t[hit_track])
     for pos in range(50):               # Radar-Reflect-Positionen -> 50 Steps max.
-        for i in range(16):
-            if True:
-                if radar_reflects[i].num_pix > pos:
-                    ddb_reflect_set_pixel(i, pos, defaults.Colors.radar_receive)
-                    if pos > 0:
-                        ddb_reflect_set_pixel(i, pos - 1, defaults.Colors.default)
+        for i in defaults.Tracks.track_hit_t[hit_track]:
+            # print("Hit-Reflect -> "+ str(i))
+            if radar_reflects[i].num_pix > pos:
+                ddb_reflect_set_pixel(i, pos, defaults.Colors.radar_receive)
+                if pos > 0:
+                    ddb_reflect_set_pixel(i, pos - 1, defaults.Colors.default)
         ddbs_show_all()
         time.sleep_ms(15)
 
