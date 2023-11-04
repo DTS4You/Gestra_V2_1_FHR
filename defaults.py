@@ -79,11 +79,11 @@ class Radar_Reflect:
 
 
 class Target:
-    num_of_targets = 8
+    num_of_targets = 16
     #timeout = [ 0,  7,  11, 18, 23, 31, 34, 40]
-    timeout     = [0, 1, 2, 3, 4, 5, 6, 7]
+    timeout     = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18,20,22,24,26,28,30]
     #track       = [0,  8, 15,  1,  9,  3,  2, 11]
-    track = [0, 1, 2, 3, 4, 5, 6, 7]
+    track = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15]
 
 class Tracks:
     num_of_tracks   = 16            # Anzahl der Schrott-Teilbahnen

@@ -53,7 +53,7 @@ class Radar_Beam:
 
 class Radar_Reflect:
 
-    def __init__(self, num_pix, direction=False):
+    def __init__(self, num_pix, direction):
         self.num_pix = num_pix
         self.offset = 0
         self.ddb = 0

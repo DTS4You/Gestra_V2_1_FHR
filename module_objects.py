@@ -117,7 +117,7 @@ def draw_targets():
 def draw_reflect():                     # Radar-Reflection
     for pos in range(50):               # Radar-Reflect-Positionen -> 50 Steps max.
         for i in range(16):
-            if i == 0:
+            if i == 14 or i == 15:
                 if radar_reflects[i].num_pix > pos:
                     ddb_reflect_set_pixel(i, pos, defaults.Colors.radar_receive)
                     if pos > 0:
