@@ -9,7 +9,7 @@ import time
 
 class GPIO:
 
-    def __init__(self, blink_time=10, run_time= 1000):
+    def __init__(self, blink_time=10, run_time= 100):
         i2c = I2C(0, scl=Pin(21), sda=Pin(20))
         self.mcp = MCP23017(i2c, 0x20)
         self.input = False
