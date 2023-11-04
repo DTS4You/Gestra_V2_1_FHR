@@ -85,6 +85,7 @@ class Target:
     #track       = [0,  8, 15,  1,  9,  3,  2, 11]
     track = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,15]
 
+
 class Tracks:
     num_of_tracks   = 16            # Anzahl der Schrott-Teilbahnen
     num_of_leds     = 79            # Alle gleich Lang
@@ -180,22 +181,22 @@ class Tracks:
 
     # Gibt die Radar_Reflect Streifen an, die beim jeweiligen Track betroffen sind.
     track_hit_t = [
-                    [0, 1],         #  0 ->  1. Track
-                    [2, 3],         #  1 ->  2. Track
-                    [4, 5],         #  2 ->  3. Track
-                    [0],            #  3 ->  4. Track
-                    [1],            #  4 ->  5. Track
-                    [0],            #  5 ->  6. Track
-                    [0],            #  6 ->  7. Track
-                    [0],            #  7 ->  8. Track
-                    [0],            #  8 ->  9. Track
-                    [0],            #  9 -> 10. Track
-                    [0],            # 10 -> 11. Track
-                    [0],            # 11 -> 12. Track
-                    [0],            # 12 -> 13. Track
-                    [0],            # 13 -> 14. Track
-                    [0],            # 14 -> 15. Track
-                    [0]             # 15 -> 16. Track
+                    [ 0,  1],        #  0 ->  1. Track
+                    [ 0,  1],        #  1 ->  2. Track
+                    [ 4,  5],        #  2 ->  3. Track
+                    [ 4,  5],        #  3 ->  4. Track
+                    [ 8,  9],        #  4 ->  5. Track
+                    [ 8,  9],        #  5 ->  6. Track
+                    [12, 13],        #  6 ->  7. Track
+                    [12, 13],        #  7 ->  8. Track
+                    [10, 11],        #  8 ->  9. Track
+                    [10, 11],        #  9 -> 10. Track
+                    [14, 15],        # 10 -> 11. Track
+                    [14, 15],        # 11 -> 12. Track
+                    [ 2,  3],        # 12 -> 13. Track
+                    [ 2,  3],        # 13 -> 14. Track
+                    [ 6,  7],        # 14 -> 15. Track
+                    [ 6,  7]         # 15 -> 16. Track
     ]
 
 
